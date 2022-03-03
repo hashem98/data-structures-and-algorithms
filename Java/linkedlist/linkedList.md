@@ -9,4 +9,4 @@
 ### insert(value): will insert the passed value as a new head of the list and make its next pointer pointing on the old head. includes(value): will search through the list on the passed value, if it find the value .. the method will return true. else, will return false. toString(): will print out the whole linked list as a string to the user.
 
 ---
-[Link of my Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/linkedlist)
+# [Link to my Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/linkedlist)
