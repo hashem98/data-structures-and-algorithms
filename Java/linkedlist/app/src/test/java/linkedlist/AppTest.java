@@ -41,4 +41,36 @@ class AppTest {
         testList.insert(6);
         assertEquals("{6} -> {5} -> Null", testList.toString());
     }
+    @Test
+    public void testInsertBefore(){
+        testList = new LinkedList<>();
+        testList.Append(5);
+        testList.Append(6);
+        testList.Append(9);
+        testList.insertBefore(6, 13);
+        testList.insertBefore(5, 16);
+        assertEquals("{16} -> {5} -> {13} -> {6} -> {9} -> Null", testList.toString());
+    }
+    @Test
+    public void testInsertAfter(){
+        testList = new LinkedList<>();
+        testList.Append(5);
+        testList.Append(6);
+        testList.Append(9);
+        testList.insertAfter(6, 13);
+
+        assertEquals("{5} -> {6} -> {13} -> {9} -> Null", testList.toString());
+    }
+    @Test
+    public void  addNodeToTheEnd(){
+
+        testList2 = new LinkedList<>();
+        testList2.insert(55);
+        testList2.Append(33);
+        String output=testList2.toString();
+        String expected="{55} -> {33} -> Null";
+        assertEquals(expected,output);
+    }
+
+
 }
