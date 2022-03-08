@@ -7,5 +7,6 @@
 | CodeChallenge03  | [array-binary-search](https://hashem98.github.io/data-structures-and-algorithms/Java/array-binary-search/array-binary-search)       |
 | CodeChallenge05  | [linkedlist](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/linkedList)       |
 | CodeChallenge05  | [Linked List Insertions](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/linked-list-insertions)       |
+| CodeChallenge05  | [linked-list-kth](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/kthFromEnd)       |
 
 
