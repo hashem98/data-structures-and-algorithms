@@ -143,6 +143,32 @@ public class LinkedList<T> {
 
     }
     /**
+     * This function merge 2 linked list 1 value from each one at a time
+     * @param one
+     * @param two
+     * @return new merged linked list
+     */
+
+    public LinkedList<T> linkedListZip(LinkedList<T> one, LinkedList<T> two){
+
+        Node<T> tempRefOne = one.head;
+        Node<T> tempRefTwo = two.head;
+
+        LinkedList<T> mergedList = new LinkedList<>();
+
+        while (tempRefOne != null || tempRefTwo != null){
+            if(tempRefOne != null){
+                mergedList.Append(tempRefOne.value);
+                tempRefOne = tempRefOne.next;
+            }
+            if(tempRefTwo != null){
+                mergedList.Append(tempRefTwo.value);
+                tempRefTwo = tempRefTwo.next;
+            }
+        }
+        return mergedList;
+    }
+    /**
      * function for testing, returns the value of head, or returns null for an empty list.
      */
     public T getHeadValue() {
