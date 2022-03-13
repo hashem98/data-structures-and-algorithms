@@ -22,4 +22,29 @@ public class App {
 
 
     }
+    public static LinkedList zipLists(LinkedList number1 , LinkedList number2){
+        LinkedList<Integer> number3 = new LinkedList<Integer>();
+        Node current1 = number1.head;
+        Node current2 = number2.head;
+        while (current1 != null || current2 != null ){
+            if (current1 == null){
+
+                number3.Append((Integer) current2.value);
+                current2 = current2.next;
+                continue;
+            }
+            if (current2 == null){
+                number3.Append((Integer) current1.value);
+                current1 =current1.next;
+                continue;
+            }
+
+            number3.Append((Integer) current1.value);
+            number3.Append((Integer) current2.value);
+            current1 =current1.next;
+            current2 = current2.next;
+        }
+        return number3;
+    }
+
 }
