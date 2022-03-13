@@ -4,7 +4,7 @@
 ---
 
 ## Whiteboard Process
-![Linked List Insertions](../asset/linkedListZip.png)
+![Linked List Insertions](../asset/zip.png)
 
 ---
 ## Approach & Efficiency
