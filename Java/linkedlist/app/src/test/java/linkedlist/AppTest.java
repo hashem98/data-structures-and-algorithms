@@ -129,4 +129,50 @@ class AppTest {
 
 
 
-    }}
+    }
+    //............................resubmit....................................
+    @Test
+    void sameLengthZipList(){
+        LinkedList<Integer> number1 = new LinkedList<>();
+        number1.insert(2);
+        number1.insert(3);
+        number1.insert(1);
+        LinkedList<Integer> number2 = new LinkedList<>();
+        number2.insert(4);
+        number2.insert(9);
+        number2.insert(5);
+
+        String test = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} -> Null";
+        String result = String.valueOf(App.zipLists(number1 , number2));
+        assertEquals(test , result);
+    }
+    @Test
+    void moreLengthZipList(){
+        LinkedList<Integer> number1 = new LinkedList<>();
+        number1.insert(2);
+        number1.insert(3);
+        LinkedList<Integer> number2 = new LinkedList<>();
+        number2.insert(4);
+        number2.insert(9);
+        number2.insert(5);
+
+        String test = "{3} -> {5} -> {2} -> {9} -> {4} -> Null";
+        String result = String.valueOf(App.zipLists(number1 , number2));
+        assertEquals(test , result);
+    }
+    @Test
+    void lessLengthZipList(){
+        LinkedList<Integer> number1 = new LinkedList<>();
+        number1.insert(2);
+        number1.insert(3);
+        number1.insert(1);
+        LinkedList<Integer> number2 = new LinkedList<>();
+        number2.insert(4);
+        number2.insert(9);
+
+        String test = "{1} -> {9} -> {3} -> {4} -> {2} -> Null";
+        String result = String.valueOf(App.zipLists(number1 , number2));
+        assertEquals(test , result);
+    }
+
+}
