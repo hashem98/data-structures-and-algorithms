@@ -192,8 +192,45 @@ public class LinkedList<T> {
         return tempRef.value;
     }
 
+    public  boolean palindrome(LinkedList<T> temp) {
+        boolean flag = true;
+        Node<T> pointer2 = temp.head;
+        Node<T> pointer = temp.head;
+        int count = 0;
+        while (pointer != null) {
+            count++;
+            pointer=pointer.next;
+        }
+        pointer=temp.head;
+        int mid =(count%2==0)?mid=count/2:(count+1)/2;
+        System.out.println(mid);
+        for (int i = 0; i <=mid; i++) {
+            pointer=pointer.next;
+        }
 
-}
+        Node<T> current = pointer;
+        Node<T> nexNode = null  ;
+        Node<T> prevNode = null;
+        while (current != null) {
+            nexNode = current.next;
+            current.next = prevNode;
+            prevNode = current;
+            current = nexNode;
+        }
+        while (pointer!=null){
+
+            if (pointer.value!=pointer2.value)
+            flag= false;
+            pointer=pointer.next;
+pointer2=pointer2.next;
+
+        }
+
+return flag;
+        }
+    }
+
+
 
 
 
