@@ -11,14 +11,17 @@ public class App {
     static final LinkedList<Integer> list2 = new LinkedList<>();
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        list1.insert(5);
-        list1.insert(10);
-        list1.insert(20);
-        list1.insert(25);
+        System.out.println("hashem");
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+        list1.insert(2);
+        list1.insert(1);
+        System.out.println(list2.palindrome(list1));
+//        System.out.println("Does your value exist ? " + list1.include(50));
+//        System.out.println("Does your value exist ? " + list1.include(25));
+//        System.out.println(list1.toString());
 
-        System.out.println("Does your value exist ? " + list1.include(50));
-        System.out.println("Does your value exist ? " + list1.include(25));
-        System.out.println(list1.toString());
 
 
     }

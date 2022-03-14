@@ -11,7 +11,8 @@ class AppTest {
     private LinkedList<Integer> testList1;
     private LinkedList<Integer> testList2;
     private LinkedList<Integer> mergedList;
-
+    static final LinkedList<Integer> list1 = new LinkedList<>();
+    static final LinkedList<Integer> list2 = new LinkedList<>();
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
@@ -173,6 +174,24 @@ class AppTest {
         String test = "{1} -> {9} -> {3} -> {4} -> {2} -> Null";
         String result = String.valueOf(App.zipLists(number1 , number2));
         assertEquals(test , result);
+    }
+    @Test void notPlindrome(){
+
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+        list1.insert(4);
+        list1.insert(5);
+        assertFalse(list2.palindrome(list1));
+    }
+    @Test void plindrome(){
+
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+        list1.insert(2);
+        list1.insert(1);
+        assertTrue(list2.palindrome(list1));
     }
 
 }
