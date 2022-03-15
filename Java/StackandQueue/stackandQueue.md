@@ -32,4 +32,4 @@
 
 * isEmpty():return true if it empty and false if not.
 
-# [My Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/stackandQueue)
+# [My Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/StackandQueue)
