@@ -9,7 +9,7 @@
 | CodeChallenge06  | [Linked List Insertions](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/linked-list-insertions)       |
 | CodeChallenge07  | [linked-list-kth](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/kthFromEnd)       |
 | CodeChallenge08  | [linked-list-zip](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/linkedListZip)       |
-| CodeChallenge10  | [stackandQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/stackandQueue/stackandQueue)       |
+| CodeChallenge10  | [stackandQueue](https://github.com/hashem98/data-structures-and-algorithms/blob/main/Java/StackandQueue/stackandQueue)       |
 
 
 
