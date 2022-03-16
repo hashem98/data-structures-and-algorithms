@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86b2fee4-f968-4da2-b3d6-06c7fb298cc8" name="Changes" comment="" />
+    <list default="true" id="86b2fee4-f968-4da2-b3d6-06c7fb298cc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +43,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.testQueuePeek">
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AppTest.testDequeue">
+    <configuration name="AppTest.testDequeue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -54,7 +57,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;stackandQueue.AppTest&quot;" />
+            <option value="&quot;stackandQueue.AppTest.testDequeue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -64,7 +67,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.aa" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testEnqueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -77,7 +80,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;stackandQueue.AppTest.aa&quot;" />
+            <option value="&quot;stackandQueue.AppTest.testEnqueue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.testDequeue" />
+        <item itemvalue="Gradle.AppTest.testEnqueue" />
         <item itemvalue="Gradle.AppTest.testQueuePeek" />
         <item itemvalue="Gradle.AppTest.testQueueDequeue" />
         <item itemvalue="Gradle.AppTest.testQueueEnqueue" />
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.AppTest.aa" />
       </list>
     </recent_temporary>
   </component>
