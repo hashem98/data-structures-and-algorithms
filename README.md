@@ -10,8 +10,8 @@
 | CodeChallenge07  | [linked-list-kth](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/kthFromEnd)       |
 | CodeChallenge08  | [linked-list-zip](https://hashem98.github.io/data-structures-and-algorithms/Java/linkedlist/linkedListZip)       |
 | CodeChallenge10  | [stackandQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/stackandQueue)       |
-| CodeChallenge11  | [PseudoQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/PseudoQueue)       |
-| CodeChallenge12  | [AnimalShelter](./Java/stackandQueue/AnimalShelter.md)       |
+| CodeChallenge11  | [PseudoQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/PseudoQueue)       || CodeChallenge12  | [AnimalShelter](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/AnimalShelter)       |
+
     
 
 
