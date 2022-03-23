@@ -12,7 +12,7 @@
 | CodeChallenge10  | [stackandQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/stackandQueue)       |
 | CodeChallenge11  | [PseudoQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/PseudoQueue)       |
 | CodeChallenge12  | [AnimalShelter](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/AnimalShelter)       |
-| CodeChallenge13  | [AnimalShelter](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/bracketValidation)       |
+| CodeChallenge13  | [Bracket Validation](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/bracketValidation)       |
 
     
 
