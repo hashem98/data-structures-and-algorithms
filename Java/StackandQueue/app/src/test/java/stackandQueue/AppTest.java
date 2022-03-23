@@ -170,5 +170,25 @@ class AppTest {
 
 
     }
+    // for challenge13
+    @Test
+    public void balanced(){
+   Stack<String> bracket=new Stack<>();
+   assertTrue(bracket.balancedParenthensies("({[hashem]})"));
+
+    }
+    @Test
+    public void notBalanced(){
+        Stack<String> bracket=new Stack<>();
+        assertFalse(bracket.balancedParenthensies("({[hashem]}))"));
+
+    }
+    @Test
+    public void ifStringIsEmpty(){
+        Stack<String> bracket=new Stack<>();
+        assertFalse(bracket.balancedParenthensies("") );
+
+    }
+
 
 }
