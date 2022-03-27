@@ -1,5 +1,7 @@
 package stackandQueue;
 
+import java.util.List;
+
 public class Queue<T> {
     private Node<T> front;
     private Node<T> back;
@@ -58,6 +60,34 @@ public class Queue<T> {
         }
         print += "{" + tempRef.value + "} back -> Null";
         return print;
+    }
+
+    /**
+     * This Function for interview
+     *
+     * @param people
+     * @param k
+     * @return
+     */
+
+    public String duckDuckGoose(List<String> people, int k) throws Exception {
+        Queue<String> names = new Queue<>();
+        int counter = 0;
+        while (counter < people.size()) {
+            names.enqueue(people.get(counter));
+            counter++;
+        }
+        int kCount = 1;
+        while (names.size != 1){
+            if (kCount != k){
+                names.enqueue(names.dequeue());
+            }else {
+                names.dequeue();
+                kCount = 0;
+            }
+            kCount++;
+        }
+        return names.dequeue();
     }
 
 }

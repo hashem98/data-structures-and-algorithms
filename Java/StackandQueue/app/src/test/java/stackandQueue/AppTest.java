@@ -8,6 +8,8 @@ import stackandQueue.AnimalShelter.AnimalShelter;
 import stackandQueue.AnimalShelter.Cat;
 import stackandQueue.AnimalShelter.Dog;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -187,6 +189,20 @@ class AppTest {
     public void ifStringIsEmpty(){
         Stack<String> bracket=new Stack<>();
         assertFalse(bracket.balancedParenthensies("") );
+
+    }
+    @Test
+    public void duckDuckGoose() throws Exception {
+
+        List<String> people = new ArrayList<>();
+        people.add("A");
+        people.add("B");
+        people.add("C");
+        people.add("D");
+        people.add("E");
+        Queue<String> queue =new Queue<>();
+        assertEquals("D",queue.duckDuckGoose(people,3));
+
 
     }
 
