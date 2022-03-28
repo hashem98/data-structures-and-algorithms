@@ -23,4 +23,6 @@
    * add => input integer: to add a new node to the tree and if the number was larger than the root go to the right and if smaller go to the left
    * contain => input integer: search the tree if the value exists and return true if it does or false if it doesn't
    
+   ----
+   
    # [My Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/BinaryTree/app/src/main/java/BinaryTree)
