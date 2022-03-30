@@ -13,4 +13,4 @@
 * then return an integer that holde the maximum value
 
 ## Solution
-[GO to my Code](./app/src/main/java/BinaryTree/BinaryTree.java)
+[GO to my Code](https://github.com/hashem98/data-structures-and-algorithms/blob/main/Java/BinaryTree/app/src/main/java/BinaryTree/BinaryTree.java)
