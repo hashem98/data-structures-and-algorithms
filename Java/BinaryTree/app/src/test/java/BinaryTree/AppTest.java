@@ -81,5 +81,15 @@ class AppTest {
 
         assertEquals("[40, 20, 30, 10]","[40, 20, 30, 10]","should return [40, 20, 30, 10]" + binaryTree.getPostOrder());
     }
+    @Test
+    public void testMaximumValueBinaryTree(){
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.setRoot(new Node(10));
+        binaryTree.getRoot().setLeft(new Node(6));
+        binaryTree.getRoot().setRight(new Node(-4));
+        binaryTree.getRoot().getLeft().setLeft(new Node(20));
+
+        assertEquals( 20, binaryTree.getMaxValue());
+    }
 
 }
