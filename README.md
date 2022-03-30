@@ -13,8 +13,8 @@
 | CodeChallenge11  | [PseudoQueue](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/PseudoQueue)       |
 | CodeChallenge12  | [AnimalShelter](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/AnimalShelter)       |
 | CodeChallenge13  | [Bracket Validation](https://hashem98.github.io/data-structures-and-algorithms/Java/StackandQueue/bracketValidation)       |
-| CodeChallenge15  | [Trees](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/BinaryTree)       |
-
+| CodeChallenge15  | [Trees](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/BinaryTree/README)       |
+| CodeChallenge16  | [MaxTree](https://hashem98.github.io/data-structures-and-algorithms/Java/BinaryTree/tree-max)       |
 
     
 
