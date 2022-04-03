@@ -91,5 +91,20 @@ class AppTest {
 
         assertEquals( 20, binaryTree.getMaxValue());
     }
+    @Test
+    public  void  testBreadthFirst() throws Exception {
+        BinaryTree binaryTree = new BinaryTree();
 
+        binaryTree.setRoot(new Node(1));
+        binaryTree.getRoot().setLeft(new Node(2));
+        binaryTree.getRoot().setRight(new Node(3));
+        binaryTree.getRoot().getRight().setLeft(new Node(7));
+        binaryTree.getRoot().getRight().setRight(new Node(8));
+        binaryTree.getRoot().getLeft().setLeft(new Node(5));
+        binaryTree.getRoot().getLeft().setRight(new Node(6));
+
+        assertEquals("[1, 2, 3, 5, 6, 7, 8]", binaryTree.breadthFirst(binaryTree).toString());
+    }
 }
+
+

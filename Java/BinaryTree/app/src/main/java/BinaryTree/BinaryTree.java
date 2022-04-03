@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import BinaryTree.Queue.Queue;
+
 import java.util.ArrayList;
 
 public class BinaryTree {
@@ -93,6 +95,31 @@ public class BinaryTree {
             findMaxHelper(node.getLeft());
             findMaxHelper(node.getRight());
         }
+    }
+    public ArrayList<Integer> breadthFirst(BinaryTree tree) throws Exception {
+
+        ArrayList<Integer> result = new ArrayList<>();
+
+        // Declare my Queue class to hold tree nodes
+        Queue<Node> nodes = new Queue<>();
+
+        if(tree.root != null) {
+            nodes.enqueue(tree.root);
+        }
+
+        while(nodes.getSize() > 0) {
+
+            Node temp = nodes.dequeue();
+            result.add(temp.getKey());
+
+            if(temp.getLeft() != null) {
+                nodes.enqueue(temp.getLeft());
+            }
+            if(temp.getRight() != null) {
+                nodes.enqueue(temp.getRight());
+            }
+        }
+        return result;
     }
 
 }
