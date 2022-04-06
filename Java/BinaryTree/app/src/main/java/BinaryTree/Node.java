@@ -1,12 +1,12 @@
 package BinaryTree;
 
-public class Node {
+public class Node<T> {
 
-    private final int key;
-    private Node left;
-    private Node right;
+     final T key;
+     Node left;
+     Node right;
 
-    public Node(int key) {
+    public Node(T key) {
         this.key = key;
     }
 
@@ -26,7 +26,15 @@ public class Node {
         this.right = right;
     }
 
-    public int getKey() {
+    public T getKey() {
         return key;
+    }
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + key +
+                ", right=" + right +
+                ", left=" + left +
+                '}';
     }
 }

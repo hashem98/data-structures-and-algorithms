@@ -19,6 +19,25 @@ class AppTest {
 
         assertNull(binaryTree.getRoot());
     }
+    @Test
+    public void addRoot() {
+        BinarySearchTree test2 = new BinarySearchTree();
+        test2.add(5);
+        assertNotNull (test2.root);
+    }
+
+
+    @Test
+    public void add() {
+        BinarySearchTree test3 = new BinarySearchTree();
+        test3.add(5);
+        test3.add(7);
+        test3.add(3);
+        test3.add(10);
+        String expected="BinarySearchTree{root=Node{value=5, right=Node{value=7, right=Node{value=10, right=null, left=null}, left=null}, left=Node{value=3, right=null, left=null}}}" ;
+        assertEquals (expected,test3.toString());
+    }
+
 
 
 
