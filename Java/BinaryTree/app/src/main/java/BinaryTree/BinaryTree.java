@@ -4,13 +4,13 @@ import BinaryTree.Queue.Queue;
 
 import java.util.ArrayList;
 
-public class BinaryTree {
+public class BinaryTree <T> extends BinarySearchTree {
 
     private Node root;
 
-    public ArrayList<Integer> preOrder = new ArrayList<>();
-    public ArrayList<Integer> inOrder = new ArrayList<>();
-    public ArrayList<Integer> postOrder = new ArrayList<>();
+    public ArrayList<T> preOrder = new ArrayList<>();
+    public ArrayList<T> inOrder = new ArrayList<>();
+    public ArrayList<T> postOrder = new ArrayList<>();
     private int max = 0;
 
     public Node getRoot() {
@@ -20,15 +20,15 @@ public class BinaryTree {
     public void setRoot(Node root) {
         this.root = root;
     }
-    public ArrayList<Integer> getPreOrder() {
+    public ArrayList<T> getPreOrder() {
         return preOrder;
     }
 
-    public ArrayList<Integer> getInOrder() {
+    public ArrayList<T> getInOrder() {
         return inOrder;
     }
 
-    public ArrayList<Integer> getPostOrder() {
+    public ArrayList<T> getPostOrder() {
         return postOrder;
     }
 
@@ -41,7 +41,7 @@ public class BinaryTree {
         if(node != null){
             inOrderTravers(node.getLeft());
             System.out.print(" " + node.getKey());
-            inOrder.add(node.getKey());
+            inOrder.add((T) node.getKey());
             inOrderTravers(node.getRight());
         }
     }
@@ -57,7 +57,7 @@ public class BinaryTree {
             postOrderTravers(node.getLeft());
             postOrderTravers(node.getRight());
             System.out.print(" " + node.getKey());
-            postOrder.add(node.getKey());
+            postOrder.add((T) node.getKey());
         }
     }
 
@@ -69,7 +69,7 @@ public class BinaryTree {
 
         if (node != null) {
             System.out.print(" " + node.getKey());
-            preOrder.add(node.getKey());
+            preOrder.add((T) node.getKey());
             preOrderTravers(node.getLeft());
             preOrderTravers(node.getRight());
         }
@@ -89,8 +89,8 @@ public class BinaryTree {
     private void findMaxHelper(Node node){
 
         if(node != null) {
-            if(node.getKey() > max){
-                max = node.getKey();
+            if((Integer)node.getKey() > max){
+                max = (Integer)node.getKey();
             }
             findMaxHelper(node.getLeft());
             findMaxHelper(node.getRight());
@@ -110,7 +110,7 @@ public class BinaryTree {
         while(nodes.getSize() > 0) {
 
             Node temp = nodes.dequeue();
-            result.add(temp.getKey());
+            result.add((Integer)temp.getKey());
 
             if(temp.getLeft() != null) {
                 nodes.enqueue(temp.getLeft());
@@ -120,6 +120,11 @@ public class BinaryTree {
             }
         }
         return result;
+    }
+    public String toString() {
+        return "BinaryTree{" +
+                "root=" + root +
+                '}';
     }
 
 }
