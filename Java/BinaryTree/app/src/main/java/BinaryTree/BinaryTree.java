@@ -121,6 +121,41 @@ public class BinaryTree <T> extends BinarySearchTree {
         }
         return result;
     }
+    /**
+     * interview solution question number 1
+     * @param tree
+     * @return
+     * @throws Exception
+     */
+    public int sumOfOddNumbers(BinaryTree tree) throws Exception {
+
+        int sum = 0;
+
+        // Declare my Queue class to hold tree nodes
+        Queue<Node> nodes = new Queue<>();
+
+        if(tree.root != null) {
+            nodes.enqueue(tree.root);
+        }
+
+        while(nodes.getSize() > 0) {
+
+            Node temp = nodes.dequeue();
+
+            if((Integer)temp.getKey() % 2 != 0)
+                sum = sum + (Integer)temp.getKey();
+
+            if(temp.getLeft() != null) {
+                nodes.enqueue(temp.getLeft());
+            }
+            if(temp.getRight() != null) {
+                nodes.enqueue(temp.getRight());
+            }
+        }
+        return sum;
+    }
+
+
     public String toString() {
         return "BinaryTree{" +
                 "root=" + root +

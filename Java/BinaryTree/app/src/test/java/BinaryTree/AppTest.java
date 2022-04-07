@@ -124,6 +124,21 @@ class AppTest {
 
         assertEquals("[1, 2, 3, 5, 6, 7, 8]", binaryTree.breadthFirst(binaryTree).toString());
     }
+@Test
+    public  void testSumOfOdd() throws Exception {
+
+
+
+    BinaryTree binaryTree = new BinaryTree();
+    BinaryTree binaryTree2 = new BinaryTree();
+
+    binaryTree.setRoot(new Node(1));
+       binaryTree.getRoot().setLeft(new Node(2));
+       binaryTree.getRoot().setRight(new Node(3));
+      binaryTree.getRoot().getLeft().setLeft(new Node(4));
+      binaryTree.getRoot().getLeft().setRight(new Node(5));
+      assertEquals(binaryTree2.sumOfOddNumbers(binaryTree),9);
+}
 }
 
 
