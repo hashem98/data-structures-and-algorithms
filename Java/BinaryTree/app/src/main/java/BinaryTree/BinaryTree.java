@@ -80,6 +80,7 @@ public class BinaryTree <T> extends BinarySearchTree {
             return null;
         }
         else {
+           max=(Integer)root.key;
             findMaxHelper(root);
         }
 

@@ -111,6 +111,16 @@ class AppTest {
         assertEquals( 20, binaryTree.getMaxValue());
     }
     @Test
+    public void testMaximumValueBinaryTreeNeg(){
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.setRoot(new Node(-10));
+        binaryTree.getRoot().setLeft(new Node(-6));
+        binaryTree.getRoot().setRight(new Node(-4));
+        binaryTree.getRoot().getLeft().setLeft(new Node(-20));
+
+        assertEquals( -4, binaryTree.getMaxValue());
+    }
+    @Test
     public  void  testBreadthFirst() throws Exception {
         BinaryTree binaryTree = new BinaryTree();
 
