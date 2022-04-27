@@ -23,6 +23,17 @@ class AppTest {
         }
         assertEquals("4,8,16,23,24,",str);
     }
+    @Test
+    void mergeSortTest(){
+
+        Sort sort =new Sort();
+        sort.mergeSort(intArray,intArray.length);
+        String str ="";
+        for (int num: intArray) {
+            str+=num+",";
+        }
+        assertEquals("4,8,16,23,24,",str);
+    }
 
 
 }

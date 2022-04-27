@@ -18,6 +18,8 @@
 | CodeChallenge17  | [tree-breadth-first](https://hashem98.github.io/data-structures-and-algorithms/Java/BinaryTree/tree-breadth-first)       |
 | CodeChallenge18  | [tree-fizz-buzz](https://hashem98.github.io/data-structures-and-algorithms/Java/tree-fizz-buzz/tree-fizz-buzz)       |
 | CodeChallenge26  | [Insertion-Sort](https://hashem98.github.io/data-structures-and-algorithms/Java/Sort/Insertion-Sort)       |
+| CodeChallenge27  | [Merge-Sort](https://hashem98.github.io/data-structures-and-algorithms/Java/Sort/Mergr-Sort)       |
+
 
 
 
