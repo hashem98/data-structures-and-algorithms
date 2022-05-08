@@ -34,6 +34,17 @@ class AppTest {
         }
         assertEquals("4,8,16,23,24,",str);
     }
+    @Test
+    void quickSortTest(){
+
+        Sort sort =new Sort();
+        sort.quickSort(intArray,0,intArray.length-1);
+        String str ="";
+        for (int num: intArray) {
+            str+=num+",";
+        }
+        assertEquals("4,8,16,23,24,",str);
+    }
 
 
 }
