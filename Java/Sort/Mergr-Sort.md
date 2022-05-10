@@ -7,6 +7,6 @@
 # White bord
 ![Merge Sort](../asset/MergeSort.png)
 
-# [Code](./app/src)
+# [Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/Sort/app/src)
 
 # [Blog](blog27.md)
