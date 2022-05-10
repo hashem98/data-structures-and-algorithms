@@ -14,6 +14,6 @@ Documentation: Your README.md
 * We continue with the right part of the original array, {6, 5, 9} until we get the final ordered array
 
 ## Solution
-# [Code](./app/src)
+# [Code](https://github.com/hashem98/data-structures-and-algorithms/tree/main/Java/Sort/app/src)
 
 # [Blog](blog28.md)
