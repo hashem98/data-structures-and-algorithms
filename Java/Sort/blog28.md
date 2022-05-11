@@ -53,7 +53,7 @@ By the end of the partitioning, all elements less then the pivot are on the left
  ``Sample Array: [8,4,23,42,16,15]``
  
 
-![Merge Sort](../asset/MergeSortblog.png)
+![Quick-Sort](../asset/QuickSort.png)
   <br><br><br>
  * Pass 1
     * To begin, we define the position as the result of a call to partition on the whole array, with the pivot value set to 15.

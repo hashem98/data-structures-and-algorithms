@@ -20,6 +20,9 @@
 | CodeChallenge26  | [Insertion-Sort](https://hashem98.github.io/data-structures-and-algorithms/Java/Sort/Insertion-Sort)       |
 | CodeChallenge27  | [Merge-Sort](https://hashem98.github.io/data-structures-and-algorithms/Java/Sort/Mergr-Sort)       |
 | CodeChallenge28  | [Quick Sort](https://hashem98.github.io/data-structures-and-algorithms/Java/Sort/Quick-Sort)       |
+| CodeChallenge30 | [HashTable](https://hashem98.github.io/data-structures-and-algorithms/Java/HashTable/hashtable)       |
+
+
 
 
 
