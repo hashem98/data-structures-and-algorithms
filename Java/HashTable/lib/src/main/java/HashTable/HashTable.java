@@ -1,6 +1,7 @@
 package HashTable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -142,5 +143,28 @@ public class HashTable<K, V> {
             }
         }
         return keyList;
+    }
+    //************************ repeated word ************************
+    public String hashmapRepeatedWord(String sentence) {
+        HashMap<String, Integer> hashMap = new HashMap<>();
+
+        for (String word : sentence.split(" ")){
+            if (word.endsWith(",")){
+                word = removeLastChar(word);
+            }
+            int count = hashMap.get(word.toLowerCase()) != null ? hashMap.get(word) : 0;
+            if (count == 1){
+                return word;
+            }
+            hashMap.put(word.toLowerCase(), count + 1);
+        }
+
+        return null;
+    }
+
+    public String removeLastChar(String s) {
+        return (s == null || s.length() == 0)
+                ? null
+                : (s.substring(0, s.length() - 1));
     }
 }
