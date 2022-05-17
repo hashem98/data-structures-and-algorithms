@@ -72,23 +72,25 @@ public void mergeSort(int[] arr, int length) {
     }
     private int partition(int arr[], int begin, int end) {
         int pivot = arr[end];
-        int i = (begin-1);
+        int j = (begin-1);
 
-        for (int j = begin; j < end; j++) {
-            if (arr[j] <= pivot) {
-                i++;
+        for (int i = begin; i <=end ; i++) {
 
-                int swapTemp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = swapTemp;
+            if (arr[i]<pivot){
+                j++;
+                swap(arr,i,j);
             }
         }
+        swap(arr,end,j+1);
+        return j+1;
 
-        int swapTemp = arr[i+1];
-        arr[i+1] = arr[end];
-        arr[end] = swapTemp;
+    }
+    public static void swap(int[] arr, int i, int low){
+        int temp;
 
-        return i+1;
+        temp = arr[i];
+        arr[i] = arr[low];
+        arr[low] = temp;
     }
 
 
