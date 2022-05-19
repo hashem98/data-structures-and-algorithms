@@ -23,6 +23,8 @@
 | CodeChallenge30 | [HashTable](https://hashem98.github.io/data-structures-and-algorithms/Java/HashTable/hashtable)       |
 | CodeChallenge31 | [Repeated-Word](https://hashem98.github.io/data-structures-and-algorithms/Java/HashTable/repeated-word)       |
 | CodeChallenge32 | [TreeIntersection](https://hashem98.github.io/data-structures-and-algorithms/Java/TreeIntersection/TreeIntersection)       |
+| CodeChallenge33 | [hashmap-left-join](https://hashem98.github.io/data-structures-and-algorithms/Java/HashTable/left-join)       |
+
 
 
 
