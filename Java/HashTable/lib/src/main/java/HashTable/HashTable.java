@@ -167,4 +167,20 @@ public class HashTable<K, V> {
                 ? null
                 : (s.substring(0, s.length() - 1));
     }
+    //************************ left-join ************************
+    public List<List<String>> hashMapLeftJoin(HashTable<String,String> synonym, HashTable<String,String> antonym){
+        List<List<String>> result = new ArrayList<>();
+
+        for (String word: synonym.keySet()) {
+            List<String> temp = new ArrayList<>();
+            temp.add(word);
+            temp.add(synonym.get(word));
+            temp.add(antonym.get(word));
+
+            result.add(temp);
+        }
+
+        return result;
+    }
+
 }
