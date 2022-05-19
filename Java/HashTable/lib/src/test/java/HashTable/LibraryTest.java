@@ -5,6 +5,8 @@ package HashTable;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -68,5 +70,36 @@ class LibraryTest {
         assertEquals("a", test1, "repeatedWord test should return 'a'");
         assertEquals("it", test2, "repeatedWord test should return 'it'");
         assertEquals("summer", test3, "repeatedWord test should return 'summer'");
+    }
+    //************************ left-join ************************
+    @Test
+    public void leftJoinTest(){
+         HashTable app = new HashTable();
+        HashTable<String, String> synonym = new HashTable<String, String>();
+        HashTable<String, String> antonym = new HashTable<String, String>();
+
+
+        synonym.add("fond", "enamored");
+        synonym.add("wrath", "anger");
+        synonym.add("diligent", "employed");
+        synonym.add("outfit", "garb");
+        synonym.add("guide", "usher");
+
+        antonym.add("fond", "averse");
+        antonym.add("wrath", "delight");
+        antonym.add("diligent", "idle");
+        antonym.add("guide", "follow");
+        antonym.add("flow", "jam");
+
+        List<List<String>> res = app.hashMapLeftJoin(synonym,antonym);
+
+        List<String> test1 = new ArrayList<>();
+        test1.add("fond");
+        test1.add("enamored");
+        test1.add("averse");
+
+        assertEquals(3, res.get(0).size());
+        assertEquals(5, res.size());
+        assertTrue( res.contains(test1));
     }
 }
