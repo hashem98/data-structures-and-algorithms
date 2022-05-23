@@ -182,5 +182,23 @@ public class HashTable<K, V> {
 
         return result;
     }
+    //************************ interview ************************
+
+    public  boolean isUnique(String str)
+    {
+        String w = str.replaceAll(" ","");
+        HashTable<Character,Integer> charcount=new HashTable<Character, Integer>();
+        for(Character ch: w.toCharArray())
+        {
+            if(charcount.keySet().contains(ch))
+            {
+                return false;
+            }
+            else
+                charcount.add(ch,1);
+        }
+        return true;
+
+    }
 
 }
