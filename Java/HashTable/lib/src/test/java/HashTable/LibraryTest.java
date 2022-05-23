@@ -102,4 +102,13 @@ class LibraryTest {
         assertEquals(5, res.size());
         assertTrue( res.contains(test1));
     }
+    //************************ interview ************************
+    @Test
+public  void isUniqueTest(){
+        HashTable<Character,Integer> charcount=new HashTable<Character, Integer>();
+
+        assertTrue(charcount.isUnique("I love cats"));
+        assertFalse(charcount.isUnique("The quick brown fox jumps over the lazy dog"));
+
+}
 }
