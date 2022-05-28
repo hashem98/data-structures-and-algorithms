@@ -25,6 +25,8 @@
 | CodeChallenge32 | [TreeIntersection](https://hashem98.github.io/data-structures-and-algorithms/Java/TreeIntersection/TreeIntersection)       |
 | CodeChallenge33 | [hashmap-left-join](https://hashem98.github.io/data-structures-and-algorithms/Java/HashTable/left-join)       |
 | CodeChallenge35 | [Graphs](https://hashem98.github.io/data-structures-and-algorithms/Java/Graphs/Graphs)       |
+| CodeChallenge36 | [GraphsBFS](https://hashem98.github.io/data-structures-and-algorithms/Java/Graphs/GraphBFS)       |
+
 
 
 
