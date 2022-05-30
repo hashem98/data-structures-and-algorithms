@@ -4,14 +4,17 @@ import java.util.*;
 
 public class Graph {
     private final Map<Vertex, List<Vertex>> adjVertices;
+    private int cost;
 
     Graph() {
         adjVertices = new HashMap<>();
     }
 
-    void addVertex(String data) {
+    Vertex addVertex(String data) {
         Vertex vertex = new Vertex(data);
         adjVertices.putIfAbsent(vertex, new ArrayList<>());
+        return vertex;
+
     }
 
     void addEdge(String data1, String data2,int er) {
@@ -21,6 +24,15 @@ public class Graph {
         adjVertices.get(vertex1).add(vertex2);
         adjVertices.get(vertex2).add(vertex1);
     }
+    public void addEdgesWithWeight(Vertex node1, Vertex node2, int weight) {
+
+        Vertex newNode1 = new Vertex(node1.data,weight);
+        Vertex newNode2 = new Vertex(node2.data,weight);
+
+        adjVertices.get(newNode1).add(newNode2);
+        adjVertices.get(newNode2).add(newNode1);
+    }
+
 
     public List<Vertex>  getVertex(String data) {
 
@@ -93,6 +105,36 @@ public class Graph {
     private List<Vertex> getAdjvertices(String data) {
         return adjVertices.get(new Vertex(data));
     }
+    //    >>>>>>>>>>>>>>>graph-business-trip<<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    public int businessTrip(Graph tripGraph, String[] cities) {
+
+     cost = 0;
+        int arraySize = cities.length;
+
+        for (int i = 0; i < arraySize - 1; i++) {
+            distance(cities[i], cities[i + 1], tripGraph);
+        }
+        return cost;
+    }
+
+    private void distance(String city1, String city2, Graph graph) {
+        if (graph.getNeighborss(city1) == null) {
+            return;
+        }
+        for (Vertex nodes : graph.getNeighborss(city1)) {
+            if (Objects.equals(city2, nodes.data)) {
+                cost = cost + nodes.weight;
+            }
+        }
+    }
+    public List<Vertex> getNeighborss(String data) {
+        return adjVertices.get(new Vertex(data));
+    }
+
+
+
+
 
 
 }

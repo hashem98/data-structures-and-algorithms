@@ -135,5 +135,39 @@ class LibraryTest {
         expected.add("Carl");
         assertEquals(expected,graph.bft(graph, "Alice"));
     }
+    @Test
+    public void test11() {
+        Graph graph = new Graph();
+        Graph graph2 = new Graph();
 
-}
+
+        Vertex node = graph.addVertex("Pandora");
+        Vertex node1 = graph.addVertex("Arendelle");
+        Vertex node2 = graph.addVertex("Metroville");
+        Vertex node3 = graph.addVertex("Monstroplolis");
+        Vertex node4 = graph.addVertex("Narnia");
+        Vertex node5 = graph.addVertex("Naboo");
+
+
+        graph.addEdgesWithWeight(node,node1,150);
+        graph.addEdgesWithWeight(node1,node2,99);
+        graph.addEdgesWithWeight(node1,node3,42);
+        graph.addEdgesWithWeight(node2,node4,37);
+        graph.addEdgesWithWeight(node2,node5,26);
+        graph.addEdgesWithWeight(node2,node3,105);
+        graph.addEdgesWithWeight(node3,node5,73);
+        graph.addEdgesWithWeight(node4,node5,250);
+
+
+        String[] cityNames1 = {"Arendelle", "Monstroplolis", "Naboo"};
+        String[] cityNames2 = {"Naboo", "Pandora"};
+        String[] cityNames3 = {"Narnia", "Arendelle", "Naboo"};
+
+
+
+        assertEquals(115,graph2.businessTrip(graph,cityNames1));
+        assertEquals(0,graph2.businessTrip(graph,cityNames2));
+        assertEquals(0,graph2.businessTrip(graph,cityNames3));
+    }
+
+    }
