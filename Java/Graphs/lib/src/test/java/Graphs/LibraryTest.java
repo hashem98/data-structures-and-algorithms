@@ -226,6 +226,24 @@ class LibraryTest {
         expected.add("Carl");
         assertEquals(expected,graph.dft(graph, "Alice"));
     }
+    @Test
+    public void test15() {
+
+        Interview g = new Interview(4);
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 2);
+        g.addEdge(2, 0);
+        g.addEdge(2, 3);
+        g.addEdge(3, 3);
+
+
+        assertTrue(g.isReachable(1, 3));
+        assertFalse(g.isReachable(3, 1));
+
+
+    }
+
 
 
 }
