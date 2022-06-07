@@ -1,27 +1,24 @@
 package interviews;
 
-import java.util.Arrays;
+
 
 public class AnagramString {
-    public boolean isAnagram(String str1, String str2) {
-        String s1 = str1.replaceAll(" ", "");
-        String s2 = str2.replaceAll(" ", "");
-        boolean status = true;
-        if (s1.length() != s2.length()) {
-            status = false;
-        } else {
-            char[] ArrayS1 = s1.toLowerCase().toCharArray();
-            char[] ArrayS2 = s2.toLowerCase().toCharArray();
-            Arrays.sort(ArrayS1);
-            Arrays.sort(ArrayS2);
-            status = Arrays.equals(ArrayS1, ArrayS2);
+    public boolean isAnagram(String word, String anagram) {
+        word=word.toLowerCase();
+        anagram=anagram.toLowerCase();
+        if (word.length() != anagram.length())
+            return false;
+
+        for (int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
+            int index = anagram.indexOf(c);
+            if (index != -1) {
+                anagram = anagram.substring(0, index) + anagram.substring(index + 1, anagram.length());
+            } else
+                return false;
         }
-        if (status) {
-            System.out.println(s1 + " and " + s2 + " are anagrams");
-        } else {
-            System.out.println(s1 + " and " + s2 + " are not anagrams");
-        }
-        return status;
+        return anagram.isEmpty();
+
     }
 
 }
