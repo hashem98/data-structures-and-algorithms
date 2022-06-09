@@ -18,4 +18,11 @@ class LibraryTest {
         assertTrue(anagramString.isAnagram("Clint Eastwood","Clint Eastwood"));
         assertFalse(anagramString.isAnagram("Software","Swear often"));
     }
+    @Test
+    void spacesURLTest (){
+        SpacesURL url=new SpacesURL();
+        assertEquals(url.spacesURL("http://code.org/hour of code.html"),"http://code.org/hour%20of%20code.html"
+        );
+    }
+
 }
