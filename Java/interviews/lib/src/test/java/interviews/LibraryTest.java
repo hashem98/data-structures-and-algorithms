@@ -24,5 +24,12 @@ class LibraryTest {
         assertEquals(url.spacesURL("http://code.org/hour of code.html"),"http://code.org/hour%20of%20code.html"
         );
     }
+    @Test
+    void integerToRomanTest (){
+        IntegerToRoman integerToRoman=new IntegerToRoman();
+        assertEquals("MCM",integerToRoman.intToRoman(1900));
+        assertEquals("DCXXXIV",integerToRoman.intToRoman(634));
+        assertEquals("MMXX",integerToRoman.intToRoman(2020));
+    }
 
 }
