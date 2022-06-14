@@ -31,5 +31,11 @@ class LibraryTest {
         assertEquals("DCXXXIV",integerToRoman.intToRoman(634));
         assertEquals("MMXX",integerToRoman.intToRoman(2020));
     }
+    @Test
+    void rotateMatrixTest (){
+        int matrix[][] = new int[][]{ {1,2,3}, {4,5,6} , {7,8,9} };
+RotateMatrix rotateMatrix=new RotateMatrix();
+assertArrayEquals(matrix,rotateMatrix.rightRotate(matrix,3));
+    }
 
 }
